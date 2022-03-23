@@ -48,9 +48,6 @@ regForm.addEventListener("submit", (e) => {
         cpasswordError.innerText = "Passwords Do Not Match";
     }
 
-    // if (nameError || lastnameError || mailError || countryError || phoneError || passwordError || cpasswordError) {
-    //     e.preventDefault();
-    // }
 
 });
 

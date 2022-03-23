@@ -22,5 +22,5 @@ include("includes/db.php");
     mysqli_stmt_bind_param($stmt, 'ssssssssss', $firstname, $lastname, $email, $country, $phone, $password, $cpassword, $gender, $message, $terms);
 
     mysqli_stmt_execute($stmt);
-    
+
     }

@@ -19,7 +19,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-
 <body id="c-body">
     <div class="c-form-container">
         <h3 class="c-form-heading">Sign up</h3>
@@ -97,7 +96,6 @@
                 </div>
             </div>
         </form>
-        <a href="users.php" class="c-list-button">Check List</a>
     </div>
     <script src="assets/js/custom.js"></script>
 </body>
