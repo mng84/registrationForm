@@ -16,11 +16,18 @@ include("includes/db.php");
     $message       = $_POST["message"];
     $terms         = $_POST["terms"];
 
+    if(empty($firstname) || empty($lastname) || empty($email) || empty($country) || empty($phone) || empty($password) || empty($gender) || empty($message) || empty($terms)) {
+       die("Missing Fields");
+    }
+
     // Prepare
     $stmt = mysqli_prepare($connection, "INSERT INTO users(firstname, lastname, email, country, phone, password, cpassword, gender, message, terms) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
                                       
     mysqli_stmt_bind_param($stmt, 'ssssssssss', $firstname, $lastname, $email, $country, $phone, $password, $cpassword, $gender, $message, $terms);
 
     mysqli_stmt_execute($stmt);
+
+    
+    header("Location: show-users.php");
 
     }

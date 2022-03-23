@@ -66,7 +66,6 @@
                     <small id="c-error-message-cpassword"></small>
                 </div>
                 <div class="c-form-input-container c-form-radio-container">
-                    <div><label for="male" class="c-radio"></div>
                     <label for="male" class="c-radio">
                         <input type="radio" name="gender" value="male" class="c-radio-input" id="male">
                         <div class="c-radio-button"></div>
@@ -77,10 +76,11 @@
                         <div class="c-radio-button"></div>
                         Female
                     </label>
+                    <small id="c-error-message-gender"></small>
                 </div>
                 <div class="c-form-input-container">
                     <label for="message">Your Message</label>
-                    <textarea name="message" id="message" rows="3"></textarea>
+                    <textarea name="message" id="message" rows="2"></textarea>
                     <small id="c-error-message-message"></small>
                 </div>
                 <div class="c-form-input-container c-form-input-container-terms">

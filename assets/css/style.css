@@ -237,6 +237,11 @@ textarea {
     text-decoration: none;
 }
 
+#c-error-message-terms {
+    position: relative;
+    top: 15px;
+}
+
 
 /* Submit button */
 
@@ -280,6 +285,7 @@ textarea {
 .c-table {
     border: 1px solid #000000;
     padding: 20px;
+    border-collapse: collapse;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -316,4 +322,33 @@ textarea {
     text-align: center;
     text-decoration: none;
     border: none;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 991px) {
+    body {
+        overflow-x: scroll;
+    }
+    #c-search-form {
+        width: 400px;
+        margin: 0 auto;
+    }
+    #c-excel-form {
+        width: 400px;
+        margin: 0 auto;
+    }
+    #excel-button {
+        width: 400px;
+        max-width: 400px;
+    }
+    .c-homepage-button {
+        display: block;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .c-table-main-container {
+        overflow-x: auto !important;
+    }
 }

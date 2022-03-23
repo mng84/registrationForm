@@ -25,11 +25,11 @@
         <form id="c-search-form" method="post" action="">
             <input type="text" id="search-bar" name="searchdata" onkeydown="searchValue();" placeholder="Search">
         </form>
-        <form method="post" action="excel-page.php" name="excel.php">
+        <form id="c-excel-form" method="post" action="excel-page.php" name="excel.php">
             <input type="submit" name="excel" id="excel-button" value="EXPORT">
         </form>
 
-        <div class="c-table-main-container">
+        <div class="c-table-main-container" style="overflow-x:auto;">
             <table class="c-table">
                 <thead>
                     <tr>
