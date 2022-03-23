@@ -1,0 +1,319 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    background: url("../images/reg-form-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.c-form-container {
+    width: 600px;
+    padding: 50px;
+}
+
+#c-form {
+    display: flex;
+}
+
+.c-form-heading {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.c-form-description {
+    font-size: 20px;
+    color: #999a9e;
+    margin-bottom: 10px;
+}
+
+.c-form-container {
+    background: #32323b;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.c-form-input-main-container {
+    width: 100%;
+}
+
+label {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: 20px;
+}
+
+.c-form-container input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #444444;
+    /* background: #737682; */
+    background: transparent;
+    color: #ffffff;
+    padding: 15px;
+    min-height: 50px;
+    margin-top: 10px;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-bottom: 2px solid #ffffff;
+}
+
+textarea {
+    overflow-x: hidden;
+}
+
+.c-form-input-container.c-form-radio-container {
+    display: flex;
+    margin: 30px 0px 10px 0px;
+}
+
+.c-form-input-container.c-form-radio-container input {
+    min-height: 20px;
+}
+
+.c-form-input-container.c-form-radio-container label {
+    top: 0px;
+}
+
+.c-form-input-container.c-form-input-container-terms {
+    margin: 20px 0px 50px 0px;
+}
+
+
+/* Custom radio buttons */
+
+.c-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.c-radio-input {
+    display: none;
+}
+
+.c-radio-button {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.c-radio-button:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.c-radio-input:checked+.c-radio-button:after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+
+/* Custom checkbox buttons */
+
+.c-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.c-checkbox-input {
+    display: none;
+}
+
+.c-checkbox-button {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+.c-checkbox-button:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.c-checkbox-input:checked+.c-checkbox-button:after {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+
+/* Terms link */
+
+.c-terms-link,
+.c-terms-link a {
+    color: #ffffff;
+}
+
+.c-terms-link a {
+    position: relative;
+    left: 10px;
+    text-decoration: none;
+}
+
+
+/* Submit button */
+
+#submit {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    background: transparent;
+    display: inline-block;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+#submit:hover {
+    color: rgb(123, 123, 123);
+}
+
+
+/* Users page css*/
+
+.c-table-main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-homepage-button {
+    padding: 10px;
+    display: inline-block;
+    width: 150px;
+    background: rgb(51 51 59);
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.c-table {
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.c-table tr th {
+    padding: 20px;
+    box-shadow: inset 0 0 0 9999px rgb(81, 79, 79);
+}
+
+.c-table td {
+    padding: 10px;
+    font-size: 12px;
+    background: #32323b;
+}
+
+#search-bar {
+    padding: 15px;
+    width: 100%;
+}
+
+
+/* Excel button */
+
+#excel-button {
+    cursor: pointer;
+    padding: 10px;
+    display: inline-block;
+    width: 150px;
+    background: rgb(79, 201, 19);
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+}
